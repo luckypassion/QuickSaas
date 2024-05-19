@@ -5,6 +5,13 @@ const nextConfig = {
   // has some troubles with it. See
   // https://github.com/adobe/react-spectrum/labels/strict%20mode
   reactStrictMode: false,
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      { protocol: 'https', hostname: 'dev-avatars.azuro.org' },
+      { protocol: 'https', hostname: 'avatars.azuro.org' },
+    ],
+  },
 };
 
 module.exports = nextConfig;
